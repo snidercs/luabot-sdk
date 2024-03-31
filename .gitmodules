@@ -1,0 +1,6 @@
+[submodule "luajit"]
+	path = luajit
+	url = https://github.com/luajit/luajit
+[submodule "allwpilib"]
+	path = allwpilib
+	url = https://github.com/wpilibsuite/allwpilib
