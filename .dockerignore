@@ -1,0 +1,4 @@
+allwpilib/build*
+*.o
+*.a
+a.out
