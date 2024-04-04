@@ -6,8 +6,9 @@ RUN apt-get --allow-unauthenticated update --no-install-recommends && \
     protobuf-compiler libprotobuf-dev libprotoc-dev \
     python3 python3-pip cmake && \
     apt-get clean && apt-get autoclean && \
-    rm -rf /var/lib/apt/lists/*
-RUN pip3 install meson
+    rm -rf /var/lib/apt/lists/* && \
+    pip3 install meson && \
+    rm -rf "$HOME/.cache/pip"
 
 RUN mkdir -p /src
 ADD ./luajit /src/luajit
