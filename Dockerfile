@@ -4,7 +4,7 @@ RUN apt-get --allow-unauthenticated update --no-install-recommends && \
     apt-get install -y build-essential clang git \
     gcc-multilib g++-multilib libssh-dev libopencv-dev \
     protobuf-compiler libprotobuf-dev libprotoc-dev \
-    python3 python3-pip cmake && \
+    python3 python3-pip cmake libxi-dev libgl-dev && \
     apt-get clean && apt-get autoclean && \
     rm -rf /var/lib/apt/lists/* && \
     pip3 install meson && \
