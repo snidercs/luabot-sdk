@@ -14,7 +14,7 @@ if [ -z "$host_arch" ]; then
     sdkdir="${HOME}/SDKs/luabot"
 fi
 
-prefix="macos-${host_arch}"
+prefix="${sdkdir}/macos-${host_arch}"
 
 cd "$ljdir"
 set -ex
